@@ -1,0 +1,39 @@
+ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 2fr));
+  grid-gap: 2px;
+}
+
+.notes {
+  border-radius: 5px;
+  word-wrap: break-word;
+  list-style: none;
+  position: relative;
+  padding: 10px;
+  margin: 5px;
+  float: center;
+  width: 260px;
+}
+
+.notes p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.deleteBatton {
+  position: absolute;
+  background-image: url('https://img.icons8.com/material-outlined/24/000000/delete-sign.png');
+  background-position: center;
+  padding: 10px;
+  background-size: 25px;
+  top: 2%;
+  right: 2%;
+  border: none;
+  background-color: inherit;
+  opacity: 0;
+}
+.deleteBatton:hover {
+  opacity: 1;
+}
